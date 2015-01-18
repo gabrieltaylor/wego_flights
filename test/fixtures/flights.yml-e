@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.wego.com/flights/api/k/2/searches?api_key=bar&ts_code=bar
+    body:
+      encoding: UTF-8
+      string: '{"trips":[{"departure_code":"SYD","arrival_code":"LON","outbound_date":"2015-03-24","inbound_date":"2015-03-29"}],"adults_count":1}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.33
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Racklimit-Limit:
+      - '50'
+      X-Racklimit-Remaining:
+      - '49'
+      X-Runtime:
+      - '0.236181'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sun, 18 Jan 2015 23:18:23 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sun, 18 Jan 2015 23:18:23 GMT
+      Content-Length:
+      - '618'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - country_site=CA; path=/
+      - currency=CAD; path=/
+      - geo_country=CA; path=/
+      - locale=en; path=/
+      - user_country_airport=Toronto+John+C+Munro+Hamilton; path=/
+      - user_country_airport_code=YHM; path=/
+    body:
+      encoding: UTF-8
+      string: '{"id":"KikTzAG7TLax9xTnvBSo2g","key":"[SYD:LON:2015-03-24:2015-03-29]~1~0~US~US","trips":[{"id":"SYD:LON:2015-03-24:2015-03-29","departure_code":"SYD","departure_name":"Sydney","departure_state_code":"NSW","departure_country_code":"AU","departure_country_name":"Australia","arrival_code":"LON","arrival_name":"London","arrival_city":true,"arrival_country_code":"GB","arrival_country_name":"United
+        Kingdom","outbound_date":"2015-03-24","inbound_date":"2015-03-29","trip_type":"standard"}],"cabin":"economy","adults_count":1,"country_site_code":"US","user_country_code":"US","created_at":"2015-01-19T07:18:23.162+08:00"}'
+    http_version: 
+  recorded_at: Sun, 18 Jan 2015 23:18:23 GMT
+recorded_with: VCR 2.9.3
