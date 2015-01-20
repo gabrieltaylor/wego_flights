@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.wego.com/flights/api/k/2/fares?api_key=bar&ts_code=***REMOVED***
+    uri: http://api.wego.com/flights/api/k/2/fares?api_key=foo&ts_code=bar
     body:
       encoding: UTF-8
       string: '{"id":"rdplxjtm","search_id":"KikTzAG7TLax9xTnvBSo2g","trip_id":"SYD:LON:2015-03-24:2015-03-29","fares_query_type":"route"}'

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.wego.com/flights/api/k/2/searches?api_key=bar&ts_code=bar
+    uri: http://api.wego.com/flights/api/k/2/searches?api_key=foo&ts_code=bar
     body:
       encoding: UTF-8
       string: '{"trips":[{"departure_code":"SYD","arrival_code":"LON","outbound_date":"2015-03-24","inbound_date":"2015-03-29"}],"adults_count":1}'
