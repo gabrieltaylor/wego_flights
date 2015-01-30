@@ -1,9 +1,4 @@
 require "wego_flights/version"
-<<<<<<< HEAD
-
-module WegoFlights
-  # Your code goes here...
-=======
 require "wego_flights/flight"
 require "faraday"
 require "json"
@@ -32,5 +27,4 @@ module WegoFlights
     end
     JSON.parse(response.body)
   end
->>>>>>> add_initial_tests
 end
